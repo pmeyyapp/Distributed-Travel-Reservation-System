@@ -1,0 +1,7 @@
+For each test your code failed, we have listed the points deducted and the most likely reason:
+
+(FdieTM)	-5
+After TM fails, transaction is not forcibly aborted.
+
+============================================
+Your final score is 95/100
