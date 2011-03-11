@@ -1,0 +1,26 @@
+# Download the tarball.
+# Put the tarball in a directory you've created for this class, say, ~/Trans
+# cd ~/Trans
+# gunzip project.tar.gz
+# tar xvf project.tar
+# cd project/lockmgr
+# make
+# cd ../transaction
+# Think of a random number between 2000 and 5000, say, 2100, and change the value of RMIREGPORT in first line of Makefile from 1099 to this number. This is the port number where your rmiresgistry will be listening. Giving it a random number will ensure that your rmiresgistry doesn't conflict with somebody else's.
+# cd ../transaction
+# make clean
+# make server
+# make client
+# rmiregistry -J-classpath -J.. 2100 &
+# cd ../test.part1
+# setenv CLASSPATH .:gnujaxp.jar
+# /usr/bin/javac RunTests.java
+# make runregistry &
+# make runtm &
+# make runrmflights &
+# make runrmrooms &
+# make runrmcars &
+# make runrmcustomers &
+# make runwc &
+# make runclient &
+# java -DrmiPort=2100 RunTests MASTER.xml
