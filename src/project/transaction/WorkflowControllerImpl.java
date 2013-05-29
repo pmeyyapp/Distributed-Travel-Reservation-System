@@ -106,7 +106,7 @@ throws RemoteException,
 	
 	
 	if(tm.commit(xid))
-	{	System.out.prinln("Hit here");
+	{	System.out.println("Hit here");
 		return true;
 	}
 	return false;
